@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SleekSites | Website Development | Designing | Karaikal | SEO | Ecommerce</title>
+    <meta name="keywords" content="web design Karaikal,website development,web development,Designing,web application,development,karaikal,seo services,seo,seo karaikal,Ecommerce,Ecommerce website,Ecommerce karaikal,best website design,website design,SleekSites,sleeksites.co.in,professional website design,website development design company,website development company,custom website design,website design agency,website agency,affordable website design,Ecommerce website design company">
+    <script src="vendor/jquery/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/dot.css">
+    <link rel="stylesheet" type="text/css" href="css/added.css">
+    <style type="text/css">
+      *
+    {
+      font-family: Comic Sans MS;
+    }
+    </style>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript">
+ var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 8) || 1000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 150;
+
+        if (this.isDeleting) { delta /= 4; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<!-- Navigation -->
+    <div class="loading">
+   	<!-- <span class="blink"><span class="dot"></span></span>
+   	<br>
+   	<br> -->
+    <font face="Comic sans MS" >
+    <h1>
+      <div href="" class="typewrite" data-period="600" data-type='[ "Need Web Services?", "Welcome to SleekSites", "We Love Design.", "We Love to Develop." ]'>
+        <span class="wrap"></span>
+      </div>
+    </h1>
+    </font>
+    <br>
+    <span class="blink"><span class="dot"></span></span>
+    </div>
+    <div id="main" style="display: none;">
+        <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Menu</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#footer">Contact Us!</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">SleekSites</h1>
+        <h3 class="mb-5">
+          <em>Your search for a Website Designer stops here..</em>
+        </h3>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <div id="services">
+    <div class="container">    
+    <div class="row">
+      <div class="col-lg-6 col-xs-12"><a href="#"><img class="hvr-grow" src="img/1.jpg"></a></div>
+      <div class="col-lg-6 col-xs-12">
+        <a href="#">
+          <p style="text-align: left;"class="hvr-underline-from-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        </a>
+    </div>
+    </div>
+  </div>
+  <div class="container">    
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <a href="#">
+          <p style="text-align:right;"class="hvr-underline-from-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        </a>
+      </div>
+    <div class="col-lg-6 col-xs-12"><a href="#"><img class="hvr-grow" src="img/2.jpg"></a></div>
+    </div>
+  </div>
+  <div class="container">    
+    <div class="row">
+      <div class="col-lg-6 col-xs-12"><a href="#"><img class="hvr-grow" src="img/3.jpg"></a></div>
+      <div class="col-lg-6 col-xs-12">
+        <a href="#">
+          <p style="text-align:left;"class="hvr-underline-from-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">    
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <a href="#">
+          <p style="text-align:left;"class="hvr-underline-from-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        </a>
+      </div>
+      <div class="col-lg-6 col-xs-12"><a href="#"><img class="hvr-grow" src="img/4.jpg"></a></div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+</div>
+
+
+    
+    <!-- Callout -->
+    <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">Want a Website?</h2>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Services</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Projects</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Contact Details:</h5>
+          <ul class="list-unstyled" >
+            <li><b>Address:</b> T-06 , NIT Puducherry , Mandapathur Road , Poovam Village , Karaikal ,  <br> Puducherry - 609609</li>
+            <li>
+            <li><b>Call Us:</b> +917639195879, +917004695034</li>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                  <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-github"></i></a></li>
+                  </ul>
+                </div>
+                </hr>
+              </div>  
+            </li>
+            </ul>
+      </div>
+      </section>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+        
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            setTimeout(function(){
+                $(".loading").fadeOut(400);
+                $("#main").fadeIn(400);
+            },3000);
+        })
+    </script>
+
+</body>
+</html>
