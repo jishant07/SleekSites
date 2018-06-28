@@ -4,7 +4,7 @@
 	font-family: Comic Sans MS;
 	font-weight: bold;
 }
-.container
+#pad
 {
 	padding-top: 50px;
 }
@@ -26,6 +26,28 @@ p
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.left
+{
+  text-align: left;
+}
+.right
+{
+  text-align: right;
+}
+@media (max-width: 760px) {
+  .left
+  {
+    text-align: center;
+  }
+  .right
+  {
+    text-align: center;
+  }
+  .flex
+  {
+    flex-wrap: wrap;
+  }
 }
 a
 {
