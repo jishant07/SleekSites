@@ -8,7 +8,7 @@
 {
 	padding-top: 50px;
 }
-img
+.flex
 {
 	width: 400px;
 	padding-top: 20px;
@@ -48,7 +48,7 @@ p
 }
 @media (max-width: 800px)
 {
-   img
+  .flex
   {
     width:350px;
     padding-left: 50px;
@@ -66,7 +66,7 @@ p
 }
 @media (max-width: 450px)
 {
-   img
+  .flex
   {
     width:300px;
     padding-left: 50px;
@@ -84,7 +84,7 @@ p
 }
 @media (max-width: 450px)
 {
-   img
+  .flex
   {
     width:250px;
     text-align: center;
@@ -152,4 +152,17 @@ a:hover
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.dev
+{
+  color: white;
+  text-align: center;
+}
+.dev-back
+{
+  background:url("../img/portfolio-2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
