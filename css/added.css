@@ -35,7 +35,7 @@ p
 {
   text-align: right;
 }
-@media (max-width: 760px) {
+@media (max-width: 950px) {
   .left
   {
     text-align: center;
@@ -44,9 +44,60 @@ p
   {
     text-align: center;
   }
-  .flex
+
+}
+@media (max-width: 800px)
+{
+   img
   {
-    flex-wrap: wrap;
+    width:350px;
+    padding-left: 50px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .left
+  {
+    text-align: center;
+  }
+  .right
+  {
+    text-align: center;
+  }
+}
+@media (max-width: 450px)
+{
+   img
+  {
+    width:300px;
+    padding-left: 50px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .left
+  {
+    text-align: center;
+  }
+  .right
+  {
+    text-align: center;
+  }
+}
+@media (max-width: 450px)
+{
+   img
+  {
+    width:250px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 0;
+  }
+  .left
+  {
+    text-align: center;
+  }
+  .right
+  {
+    text-align: center;
   }
 }
 a
