@@ -25,39 +25,31 @@
     .jumbotron
     {
       text-align: right;
-      margin-top: 110px;
+      margin-top: 50px;
     }
     #head
     {
-       text-align: left;
-       color: black;
+        text-align: center;
+        color: black;
        font-size: 30px;
-       width: 20%;
-       flex-wrap: wrap;
-       float: left;
-       margin: auto;
-       padding: 20px;
-       padding-top: 35px;
-       font-size: 45px;
-       font-family: Comic Sans MS;
-       position: relative;
     }
   </style>
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="css/loading.css"> -->
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <!-- Custom Fonts -->
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet"> -->
-
-    <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </head>
 <body>
-	<h1 id="head">SleekSites</h1>
-<a class="menu-toggle rounded" href="#" style="z-index: 1200;">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" style="align-items: left; display: block; " >
+    <div class="navbar-header">
+      <a class="navbar-brand" id="head" href="#">SleekSites</a>
+    </div>
+  </div>
+</nav>
+<a class="menu-toggle rounded" href="#">
       <i class="fa fa-bars"></i>
     </a>
 	<nav id="sidebar-wrapper">
@@ -76,13 +68,15 @@
         </li>
       </ul>
     </nav>
+
+    <br>
 <!-- Jumbotron -->	
 <div class="container">
 	<div class="jumbotron">
 		<h1>E-Commerce</h1>
 	</div>
 	<br>
-	<p style="font-size: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas nibh ac erat finibus, ut tempus neque egestas. Etiam consectetur aliquet orci a sagittis. Vestibulum mi velit, vehicula in mattis eget, sodales eget ipsum. Donec condimentum orci felis, in viverra neque aliquam sed. Maecenas suscipit ipsum felis, in varius ipsum pellentesque et. Maecenas ut lacinia nisl, ornare semper magna. Suspendisse sollicitudin arcu placerat mattis egestas. Suspendisse mollis, nisi vitae commodo aliquam, neque nisl sollicitudin ipsum, vel convallis libero turpis at leo. Cras iaculis eu ante et mattis. Morbi sit amet auctor libero, vitae consectetur dui. Nulla lacinia nisl non enim rutrum volutpat. Cras nec nibh faucibus, feugiat ligula id, varius est.
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas nibh ac erat finibus, ut tempus neque egestas. Etiam consectetur aliquet orci a sagittis. Vestibulum mi velit, vehicula in mattis eget, sodales eget ipsum. Donec condimentum orci felis, in viverra neque aliquam sed. Maecenas suscipit ipsum felis, in varius ipsum pellentesque et. Maecenas ut lacinia nisl, ornare semper magna. Suspendisse sollicitudin arcu placerat mattis egestas. Suspendisse mollis, nisi vitae commodo aliquam, neque nisl sollicitudin ipsum, vel convallis libero turpis at leo. Cras iaculis eu ante et mattis. Morbi sit amet auctor libero, vitae consectetur dui. Nulla lacinia nisl non enim rutrum volutpat. Cras nec nibh faucibus, feugiat ligula id, varius est.
 <br>
 <br>
 Aenean at tortor tristique, facilisis nulla sed, aliquet nibh. Vestibulum accumsan, leo ac mollis ornare, arcu purus tempus elit, nec scelerisque erat libero non enim. Aenean lobortis, mi in aliquam tristique, mauris mi volutpat elit, ac sagittis leo leo ac ligula. Donec risus ante, venenatis at porttitor eu, blandit vel erat. Nunc eu aliquam urna. Nulla ultricies quam sagittis est varius gravida. Proin tincidunt posuere imperdiet. Donec accumsan lobortis tortor, sit amet semper nunc finibus id. Phasellus ac fermentum justo, sit amet tincidunt tortor. Integer molestie, nisl eu placerat pulvinar, nunc magna semper ante, et interdum nibh eros et ex. Suspendisse euismod risus non magna euismod suscipit.
@@ -111,7 +105,7 @@ Ut hendrerit efficitur diam in tempus. Nullam accumsan purus id elit cursus cond
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
         <h5>Contact Details:</h5>
-          <ul class="list-unstyled" >
+          <ul class="list-unstyled" style="color: #ffffff;">
             <li><b>Address:</b> T-06 , NIT Puducherry , Mandapathur Road , Poovam Village , Karaikal ,  <br> Puducherry - 609609</li>
             <li>
             <li><b>Call Us:</b> +917639195879, +917004695034</li>
