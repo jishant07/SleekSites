@@ -1,0 +1,19 @@
+.navbar-fixed-top
+{
+	padding:5px;
+	width: 96%;
+	margin:0px;
+	height: 6%;
+}
+.menu-toggle
+{
+	right: 0px;
+	top: 0px;
+	width: 4%;
+	height: 7%;
+	z-index: 1202;
+}
+#sidebar-wrapper
+{
+	z-index: 1201;
+}
