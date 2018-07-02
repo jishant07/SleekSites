@@ -35,6 +35,10 @@ p
 {
   text-align: right;
 }
+.mb-1
+{
+  font-size: 10em;
+}
 @media (max-width: 950px) {
   .left
   {
@@ -44,7 +48,10 @@ p
   {
     text-align: center;
   }
-
+  .mb-1
+  {
+    font-size: 30px;
+  }
 }
 @media (max-width: 800px)
 {
@@ -62,6 +69,10 @@ p
   .right
   {
     text-align: center;
+  }
+  .mb-1
+  {
+    font-size: 25px;
   }
 }
 @media (max-width: 450px)
@@ -81,6 +92,10 @@ p
   {
     text-align: center;
   }
+  .mb-1
+  {
+    font-size: 20px;
+  }
 }
 @media (max-width: 450px)
 {
@@ -98,6 +113,10 @@ p
   .right
   {
     text-align: center;
+  }
+  .mb-1
+  {
+    font-size: 15px;
   }
 }
 a
@@ -155,7 +174,7 @@ a:hover
 }
 .dev
 {
-  color: white;
+  color:black;
   text-align: center;
 }
 .dev-back
