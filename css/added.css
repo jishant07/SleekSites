@@ -166,3 +166,11 @@ a:hover
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 950px) 
+{
+	.dev-back
+	{
+		width:100%;
+	} 
+
+}
