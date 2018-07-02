@@ -15,10 +15,6 @@
   text-align: center;
   padding-left:100px; 
 }
-p
-{
-  padding-top: 50px;
-}
 #services
 {
   background: url("../img/bg-masthead.jpg");
@@ -44,60 +40,16 @@ p
   {
     text-align: center;
   }
-
-}
-@media (max-width: 800px)
-{
-  .flex
+  img
   {
-    width:350px;
-    padding-left: 50px;
-    text-align: center;
-    padding-top: 30px;
-  }
-  .left
-  {
-    text-align: center;
-  }
-  .right
-  {
-    text-align: center;
+    width: 90%;
   }
 }
 @media (max-width: 450px)
 {
-  .flex
+  .sizer
   {
-    width:300px;
-    padding-left: 50px;
-    text-align: center;
-    padding-top: 30px;
-  }
-  .left
-  {
-    text-align: center;
-  }
-  .right
-  {
-    text-align: center;
-  }
-}
-@media (max-width: 450px)
-{
-  .flex
-  {
-    width:250px;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 0;
-  }
-  .left
-  {
-    text-align: center;
-  }
-  .right
-  {
-    text-align: center;
+    font-size: 0.8em;
   }
 }
 a
@@ -165,12 +117,4 @@ a:hover
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media (max-width: 950px) 
-{
-	.dev-back
-	{
-		width:100%;
-	} 
-
 }
