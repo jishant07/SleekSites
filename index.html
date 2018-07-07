@@ -8,7 +8,7 @@
     <title>SleekSites | Website Development | Designing | Karaikal | SEO | Ecommerce</title>
     <meta name="keywords" content="web design Karaikal,website development,web development,Designing,web application,development,karaikal,seo services,seo,seo karaikal,Ecommerce,Ecommerce website,Ecommerce karaikal,best website design,website design,SleekSites,sleeksites.co.in,professional website design,website development design company,website development company,custom website design,website design agency,website agency,affordable website design,Ecommerce website design company">
     <script src="vendor/jquery/jquery.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="css/added.css">
+    <link rel="stylesheet" type="text/css" href="css/added.css" id="css_added">
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
     <script type="text/javascript">
  var TxtType = function(el, toRotate, period) {
@@ -81,6 +81,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/phone.css">
      <style type="text/css">
       *
     {
@@ -90,18 +91,17 @@
 </head>
 <body id="page-top">
 <!-- Navigation -->
-    <div class="loading">
-    <font face="Comic sans MS" >
+    <div class="loading" style="display: none;" >
     <h1>
       <div href="" class="typewrite" data-period="600" data-type='[ "Need Web Services?", "Welcome to SleekSites", "We Love Design.", "We Love to Develop." ]'>
         <span class="wrap"></span>
       </div>
     </h1>
-    </font>
     <br>
     <span class="blink"><span class="dot"></span></span>
     </div>
-    <div id="main" style="display: none;">
+    <div id="main">
+
         <a class="menu-toggle rounded" href="#">
       <i class="fa fa-bars"></i>
     </a>
@@ -126,7 +126,7 @@
     </nav>
 
     <!-- Header -->
-
+    <div style="color: white; position: absolute; z-index: 1000 !important; top: 40px; left: 140px; font-size:1.2em;  ">+917639195879</div>
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
         <h1 class="mb-1">SleekSites</h1>
@@ -139,8 +139,18 @@
     </a>
 
     </header>
+<a href="tel:+917639195879"><div style="z-index: 1000 !important;"  class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
+<div class="phonering-alo-ph-circle"></div>
+ <div class="phonering-alo-ph-circle-fill"></div>
+<a href="tel:+917639195879" class="pps-btn-img" title="Call Us!">
+ <div class="phonering-alo-ph-img-circle"></div>
+ </a>
 
-    <!-- Services -->
+</div></a>
+<!-- <div class="container">
+	<p style="color: green; z-index: 300000 !important; " >+917639195879</p>
+</div>
+ -->    <!-- Services -->
     <div id="services">
     
 </div>
@@ -201,15 +211,15 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
         $(document).ready(function()
         {
             setTimeout(function(){
                 $(".loading").fadeOut(400);
                 $("#main").fadeIn(400);
             },3000);
-        })
-    </script>
+        });
+    </script> -->
     <script type="text/javascript">
     	$("#footer").load("./footer.html");
     </script>
@@ -233,15 +243,21 @@
     			{
     				$("#services").html("");
     				$("#services").load("./services_mob.html");
+    				/*$("#css_added").remove();
+    				var css = '<link rel="stylesheet" type="text/css" href="css/added.css" id="css_added">';
+    				$("head").append(css);*/
     				flag=0;
     			}
     			else if(window_size>900 && !flag)
     			{
     				$("#services").load("./services_com.html");
+    				/*$("#css_added").remove();
+    				var css = '<link rel="stylesheet" type="text/css" href="css/added.css" id="css_added">';
+    				$("head").append(css);*/
     				flag=1;
     			}
     		});
-    </script>
+    </script> 
 
 </body>
 </html>
