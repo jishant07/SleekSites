@@ -3,17 +3,12 @@
   margin: auto;
   font-family: Comic Sans MS;
   font-weight: bold;
-}
-#pad
-{
-  padding-top: 50px;
+  max-width: 100%;
 }
 .flex
 {
-  width: 400px;
-  padding-top: 20px;
-  text-align: center;
-  padding-left:100px; 
+  width:100%;
+  text-align: center; 
 }
 #services
 {
@@ -38,43 +33,6 @@
   padding: 3em;
   margin: auto;
   vertical-align: middle;
-}
-@media (max-width: 950px) {
-  .left
-  {
-    text-align: center;
-  }
-  .right
-  {
-    text-align: center;
-  }
-  img
-  {
-    width: 20em;
-    height:auto;
-    padding: 0;
-    margin: 0;
-  }
-}
-@media (max-width: 450px)
-{
-  .sizer
-  {
-    font-size: 0.8em;
-  }
-  img
-  {
-    width:15em;
-  }
-}
-a
-{
-  color: black;
-}
-a:hover
-{
-  color:black;
-  font-style: normal;
 }
 .hvr-underline-from-center {
   display: inline-block;
