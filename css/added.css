@@ -23,12 +23,14 @@
   text-align: left;
   vertical-align: middle;
   margin-left:3em;
+  padding: 1em;
 }
 .right
 {
   text-align: right;
   vertical-align: middle;
   margin-right:3em;
+  padding: 1em;
 }
 .hvr-reveal {
   display: inline-block;
