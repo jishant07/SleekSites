@@ -5,7 +5,7 @@
           <ul class="list-unstyled quick-links">
             <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About Us</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Services</a></li>
+            <li onclick="dropAddFunction()" ><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Services<div  style="display: none; " class="foot_add" ><ul><li><a href="#">Website Design</a></li><li><a href="#">Seo</a></li><li><a href="#">Ecommerce Website</a></li><li><a href="#">Support</a></li></ul></div> </a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Projects</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
           </ul>
@@ -42,3 +42,16 @@
             </li>
             </ul>
       </div>
+        <script type="text/javascript">
+        function dropAddFunction()
+        {
+            if($(".foot_add").css("display")=='none')
+            {
+                $(".foot_add").slideDown();
+            }
+            else
+            {
+                $(".foot_add").slideUp();
+            }
+        }
+    </script>
