@@ -58,19 +58,24 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/loading2.css">
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" style="background: #e27d5f;" >
+  <div class="loading1">
+    <img src="./img/try1.gif">
+  </div>
+<div id="main" style="display: none;" >
+  <nav class="navbar navbar-default navbar-fixed-top" style="background: #e27d5f;" >
   <div class="container-fluid" style="align-items: left; display: block;" >
     <div class="navbar-header">
       <a class="navbar-brand" id="head" href="#" style="color: white;" >SleekSites</a>
     </div>
   </div>
 </nav>
-<a class="menu-toggle rounded" href="#">
+<!-- <a class="menu-toggle rounded" href="#">
       <i class="fa fa-bars"></i>
     </a>
-	<nav id="sidebar-wrapper">
+  <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
           <a class="js-scroll-trigger" href="#page-top">Menu</a>
@@ -86,12 +91,12 @@
         </li>
       </ul>
     </nav>
-
+ -->
     <br>
-<!-- Jumbotron -->	
+<!-- Jumbotron -->  
 <div class="container">
-	<div class="jumbotron">Web Development</div>
-	<br>
+  <div class="jumbotron">Web Development</div>
+  <br>
   <div style="color: white;" >
     <h2 style="color: white; text-decoration: underline;">Responsive Web Designing</h2>
     <p style="font-size: 1.2em;" >The usage of mobile internet is on a crazy rise nowadays which has resulted in responsive designing. Responsive web design is an art of designing websites for a multitude of screen sizes & devices. Google, our favourite search engine giant strongly recommends Responsive website Design to enhance user experience and in turn increase conversions. One design fits in to all. There are so many advantages in opting mobile friendly web design it enhances user experience, improves site performance, increases your visibility in search engines (by SEO), easier to manage & cost effective. Would you like to prepare your online presence for future then you are on right track. Get in touch with us for further more details on RWD(Responsive Web Designing).
@@ -129,9 +134,19 @@
 </div>
 <section id="footer" style="font-size: 1.2em;">
       </section>
+</div>
       <script src="js/stylish-portfolio.min.js"></script>
       <script type="text/javascript">
         $("#footer").load("./footer.html");
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function()
+        {
+            setTimeout(function(){
+                $(".loading1").fadeOut(400);
+                $("#main").fadeIn(400);
+            },2000);
+        });
       </script>
 </body>
 </html>	
