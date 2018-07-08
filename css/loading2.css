@@ -1,5 +1,6 @@
 .loading1 {
-  background: url("../img/try1.gif");
+  /*background: url("../img/try1.gif");*/
+  background-color: white;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
