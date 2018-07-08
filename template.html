@@ -20,18 +20,20 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      overflow-x: hidden;
     }
     p
     {
       color: white;
       margin-top: 1.5em;
       z-index: 1;
+      text-align: center;
     }
     .jumbotron
     {
       text-align: center;
       margin-top: 50px;
-      font-size: 4.5em;
+      font-size: 5em;
     }
     #head
     {
@@ -42,6 +44,13 @@
     *
     {
       font-family: 'Fira Sans', sans-serif;
+    }
+    @media (max-width: 500px)
+    {
+    	.jumbotron
+    	{
+    		font-size: 2em;
+    	}
     }
   </style>
     <script src="vendor/jquery/jquery.min.js"></script>
