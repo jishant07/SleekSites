@@ -6,15 +6,3 @@
 	height: 6%;
 	z-index: 1199;
 }
-.menu-toggle
-{
-	right: 0px;
-	top: 0px;
-	width: 4em;
-	height: 3.5em;
-	z-index: 1202;
-}
-#sidebar-wrapper
-{
-	z-index: 1201;
-}
