@@ -1,19 +1,23 @@
 .hvr-grow,.hvr-reveal{display:inline-block;vertical-align:middle;box-shadow:0 0 1px transparent}*{margin:auto;font-family:Comic Sans MS;font-weight:700;max-width:100%}.flex{width:200%;text-align:center}#services{background:url(../img/bg-masthead.jpg) center no-repeat fixed;background-size:cover}.left{text-align:left;vertical-align:middle;margin-left:3em;padding:1em}.right{text-align:right;vertical-align:middle;margin-right:3em;padding:1em}.hvr-reveal{-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);position:relative;overflow:hidden}.hvr-reveal:before{content:"";position:absolute;z-index:-1;left:0;right:0;top:0;bottom:0;border-color:#2098D1;border-style:solid;border-width:0;-webkit-transition-property:border-width;transition-property:border-width;-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-reveal:active:before,.hvr-reveal:focus:before,.hvr-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0);border-width:4px}.hvr-grow{-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;width:100em}.hvr-grow:active,.hvr-grow:focus,.hvr-grow:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}.dev{color:#fdce2a;text-align:center}.dev-back{background:url(../img/portfolio-1.jpeg) center no-repeat fixed;background-size:cover}
 .costing
 {
-	background:url('images/1(1).jpg');
+	background:url('../img/rateBg.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+	color : black;
 }
-.one , .two , .three , .four , .five
+.one , .two  , .three , .four , .five 
 {
 	background: white;
 	margin:30px auto;
 	background: #f7f7f7;
-	box-shadow: 0 0 100px rgba(0,0,0,1);
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
 }
+
+
+
 .heading
 {
 	background: #2980b9;
@@ -31,7 +35,8 @@ ul
 	margin: 0;
 }
 .list
-{
+{	
+	color: lightblue;
 	height: 40px;
 	line-height: 40px;
 	text-align: right;
@@ -42,9 +47,10 @@ ul
 	background: lightblue;
 	text-align: right; 
 }
-#cost
+.cost
 {
 	text-align: right;
+	color:#2980b9;
 }
 .five
 {
@@ -63,4 +69,8 @@ ul
 	{
 		font-size: 1em;
 	}
+}
+.price{
+	background:#f99f4b;
+	margin-left: 20px;
 }
