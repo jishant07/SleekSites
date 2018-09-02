@@ -1,13 +1,1 @@
-.loading {
-  background: url("../img/try.gif");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: auto;
-  text-align: center;
-  padding-top:50px;
-  width: 100%;
-  height: 100%;
-}
-* { color:#fff; text-decoration: none;}
+.loading{background:url(../img/try.gif) center no-repeat fixed;background-size:cover;margin:auto;text-align:center;padding-top:50px;width:100%;height:100%}*{color:#fff;text-decoration:none}
