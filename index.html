@@ -205,7 +205,8 @@
                                 <img src="img/2.jpg" width="100%" title="web design" alt="web design image" class="hvr-grow">
                             </td>
                             <td>
-                                <p class="left hvr-reveal">Our SleekSites, Karaikal developers are trained artisans of Website Designing and Development in Karaikal. There is not a single kind of website that our developers cannot create.Here at SleekSites, Karaikal , We offer Single Page Website design,Multipage/Portfolio Website development,Custom Website Designing,Website Designing with Login page,Website Designing with admin panel, Ecommerce Development and many more.We are certainly one of the best company for website designing in Karaikal.</p>
+                                <p class="left hvr-reveal fade_one">Our SleekSites, Karaikal developers are trained artisans of Website Designing and Development in Karaikal. There is not a single kind of website that our developers cannot create.Here at SleekSites, Karaikal , We offer Single Page Website design,Multipage/Portfolio Website development,Custom Website Designing,Website Designing with Login page,Website Designing with admin panel, Ecommerce Development and many more.We are certainly one of the best company for website designing in Karaikal.</p>
+                                <p class="left hvr-reveal fade_one"><strong>Website designing</strong> indicates the objective of the company, goal and services to viewer with more enhanced way. Website is a virtual representation of your company, services and your team.We serve effective website design with rich ui and graphical representation, rich color combination, logo designing, high quality and crystal clear banner with size optimization and load balance. We provide best website design, corporate website design, company profile website, and also e-commerce website design. </p>
                             </td>
                         </tr>
                     </table>
@@ -590,11 +591,24 @@
         }
         $(window).resize(function() { //console.log($(window).width()); var window_size=$(window).width(); if(window_size<=900 && flag){$("#services").html(""); $("#services").load("./services_mob.html"); flag=0;}else if(window_size>900 && !flag){$("#services").load("./services_com.html"); flag=1;}});
     </script>
-    <!-- <script type="text/javascript">
-        $(document).ready(function() {
-            $(".loading").fadeOut(400);
-            $("#main").fadeIn(400);
-        });
-    </script> -->
+<script type="text/javascript">
+    $(".fade_one").hide();
+        (function() {
+
+    var quotes = $(".fade_one");
+    var quoteIndex = -1;
+    
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(1000)
+            .delay(20000)
+            .fadeOut(1000, showNextQuote);
+    }
+    
+    showNextQuote();
+    
+})();
+      </script>
 </body>
 </html>
